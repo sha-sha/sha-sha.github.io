@@ -1,0 +1,58 @@
+# Sample workflow to build and deploy a static site
+name: Build and Deploy
+
+on:
+  # Runs on pushes to the master branch
+  push:
+    branches: ["master"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        # ⚠️ Customize this for your tool. This is for Node.js based tools.
+        # You might need to set up Python, Ruby, etc., instead.
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        # ⚠️ Customize this command for your tool (e.g., npm install, pip install)
+        run: npm install
+
+      - name: Build static site
+        # ⚠️ Customize this command for your tool (e.g., hugo, eleventy, npm run build)
+        run: npm run build
+
+      - name: Upload artifact
+        # This uploads your final static site files for deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # ⚠️ Customize this path to your build output directory (e.g., public, dist, _site)
+          path: './_site'
+
+  deploy:
+    # Requires the build job to be successful
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
