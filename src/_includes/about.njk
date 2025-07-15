@@ -1,0 +1,15 @@
+{% extends "base.njk" %}
+{% block content %}
+  <div class="container pt-4">
+    <div class="row">
+      <div class="col-6">
+        <div class="main-content">
+          {{ content | safe }}
+        </div>
+      </div>
+      <div class="col-6">
+        <img src="/images/ayelet.png" alt="Ayelet Schlesinger's profile image" class="img-fluid"/>
+      </div>
+    </div>
+  </div>
+{% endblock %}

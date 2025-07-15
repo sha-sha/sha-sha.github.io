@@ -1,4 +1,11 @@
 :root {
+  --bs-primary: #6EC1E4;
+  --bs-primary-rgb: 110, 193, 228;
+  /* Corresponding RGB values for your primary color */
+  --bs-secondary: #54595F;
+  --bs-secondary-rgb: 84, 89, 95;
+  /* Corresponding RGB values for your secondary color */
+
   --e-global-color-primary: #6EC1E4;
   --e-global-color-secondary: #54595F;
   --e-global-color-text: #7A7A7A;
@@ -11,6 +18,12 @@
   --e-global-typography-text-font-weight: 400;
   --e-global-typography-accent-font-family: "Roboto";
   --e-global-typography-accent-font-weight: 500;
+}
+
+.navbar {
+  --bs-navbar-active-color: #877222;
+  --bs-navbar-color: #877222;
+  --bs-navbar-hover-color: #23A455;
 }
 
 body {

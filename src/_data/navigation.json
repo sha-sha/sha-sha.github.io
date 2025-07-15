@@ -1,0 +1,18 @@
+[
+  {
+    "title": "ראשי",
+    "url": "/"
+  },
+  {
+    "title": "קצת על עצמי",
+    "url": "/about"
+  },
+  {
+    "title": "English",
+    "url": "/english"
+  },
+  {
+    "title": "הצהרת נגישות",
+    "url": "/accessibility"
+  }
+]
