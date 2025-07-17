@@ -34,17 +34,27 @@
     {% include "header.njk" %}
     {% include "navbar.njk" %}
     {% block content %}
+      {% if language == 'hebrew' %}
+        {% set lang_class = "hebrew" %}
+      {% else %}
+        {% set lang_class = "english" %}
+      {% endif %}
+      {% if stylex == "legal" %}
+        {% set legal_class = "legal" %}
+      {% else %}
+        {% set legal_class = "" %}
+      {% endif %}
       <div class="container pt-4">
         <div class="row">
           <div class="col-12">
-            <div class="main-content">
+            <div class="main-content {{ lang_class }} {{ legal_class }}">
               {{ content | safe }}
             </div>
           </div>
         </div>
       </div>
     {% endblock %}
-    {% include "contact_us.njk" %}
+    {# {% include "contact_us.njk" %} #}
     <script src="/js/main.js"></script>
   </body>
 </html>

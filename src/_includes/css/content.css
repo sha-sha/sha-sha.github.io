@@ -1,3 +1,8 @@
+.main-content.english {
+  text-align: left;
+  direction: ltr;
+}
+
 .main-content p {
   font-family: var(--e-global-typography-text-font-family), Sans-serif;
   font-weight: var(--e-global-typography-text-font-weight);
@@ -30,4 +35,39 @@
   color: #339966;
   font-weight: bolder;
 
+}
+
+.main-content.legal p {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: #7A7A7A;
+
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+.main-content.legal li {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  color: #7A7A7A;
+
+  font-size: 16px;
+  line-height: 1.6em;
+}
+
+
+.main-content.legal h1 {
+  padding-top: 10px;
+  font-size: 27px;
+  line-height: 1.3em;
+  color: #339966;
+  font-weight: bolder;
+}
+
+.main-content.legal h2 {
+  padding-top: 10px;
+  font-size: 23px;
+  line-height: 1.3em;
+  color: #339966;
+  font-weight: bolder;
 }
