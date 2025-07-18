@@ -2,13 +2,22 @@
 {% block content %}
   <div class="container pt-4">
     <div class="row">
-      <div class="col-6">
+      <div class="col-12 col-md-5 order-md-2 mb-4 mb-md-0 d-flex justify-content-center">
+        <div class="profile-image" style="max-width: 400px;">
+          {% image "images/ayelet.png", "Ayelet Schlesinger's profile image", "400px" %}
+        </div>
+        <style>
+          .profile-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+          }
+        </style>
+      </div>
+      <div class="col-12 col-md-7 order-md-1">
         <div class="main-content">
           {{ content | safe }}
         </div>
-      </div>
-      <div class="col-6">
-        <img src="/images/ayelet.png" alt="Ayelet Schlesinger's profile image" class="img-fluid"/>
       </div>
     </div>
   </div>

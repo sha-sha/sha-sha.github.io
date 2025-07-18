@@ -1,7 +1,7 @@
 ---
 title: "איילת שלזינגר ארביב – פסיכולוגית רגשית"
 language: "hebrew"
-stylex: "legal"
+style: "legal"
 layout: "base.njk"
 ---
 # הצהרת נגישות
