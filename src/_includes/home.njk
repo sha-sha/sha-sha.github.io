@@ -1,0 +1,50 @@
+{% extends "base.njk" %}
+{% block content %}
+  <div class="container pt-4">
+    <div class="row d-none d-md-flex">
+      <div class="col-sm-3 text-center">
+        <div class="small-image" style="max-width: 200px;">
+          {% image "images/therapy_1.png", "Title 1", "400px" %}
+          <h5 class="py-3">טיפול רגשי</h5>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div class="small-image" style="max-width: 200px;">
+          {% image "images/therapy_2.png", "Title 1", "400px" %}
+          <h5 class="py-3">טיפול זוגי</h5>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div class="small-image" style="max-width: 200px;">
+          {% image "images/therapy_3.png", "Title 1", "400px" %}
+          <h5 class="py-3">טיפול משפחתי</h5>
+        </div>
+      </div>
+      <div class="col-sm-3 text-center">
+        <div class="small-image" style="max-width: 200px;">
+          {% image "images/therapy_4.png", "Title 1", "400px" %}
+          <h5 class="py-3">הדרכת הורים</h5>
+        </div>
+      </div>
+    </div>
+    <style>
+      .small-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      .small-image h5 {
+        font-family: Roboto, sans-serif;
+        font-size: 28px;
+        font-weight: 600;
+        color: var(--e-global-color-primary);
+      }
+    </style>
+    <div class="row mt-4">
+      <div class="col-12">
+        <div class="main-content">
+          {{ content | safe }}
+        </div>
+      </div>
+    </div>
+  {% endblock %}
