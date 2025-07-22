@@ -4,6 +4,7 @@
   /* Corresponding RGB values for your primary color */
   --bs-secondary: #54595F;
   --bs-secondary-rgb: 84, 89, 95;
+  --bs-btn-bg: #61CE70;
   /* Corresponding RGB values for your secondary color */
 
   --e-global-color-primary: #6EC1E4;
@@ -18,6 +19,11 @@
   --e-global-typography-text-font-weight: 400;
   --e-global-typography-accent-font-family: "Roboto";
   --e-global-typography-accent-font-weight: 500;
+}
+
+.btn-primary {
+  --bs-btn-bg: #61CE70;
+  --bs-btn-hover-bg: #47bb56;
 }
 
 .navbar {
@@ -36,4 +42,16 @@ body {
   line-height: 1.5;
   margin: 0;
   -webkit-font-smoothing: antialiased;
+}
+
+h5 {
+  font-family: Roboto, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--e-global-color-primary);
+}
+
+button {
+  background-color: var(--e-global-color-accent);
+
 }
