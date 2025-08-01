@@ -9,7 +9,7 @@
           <p class="personal-details-2 text-center text-md-end">{{ site.personal.title }}</p>
           <p class="personal-details-3 text-center text-md-end">{{ site.personal.registration }}</p>
           <p class="personal-details-4 text-center text-md-end">
-            <a href="tel:{{ site.contact.phone }}">{{ site.contact.phone }}</a>
+            <a id="phone-link" href="tel:{{ site.contact.phone }}">{{ site.contact.phone }}</a>
           </p>
         </div>
       </div>
@@ -23,7 +23,7 @@
           <div class="row pb-2">
             <ul class="contact-list">
               <li class="contact-item">
-                <a href="mailto:{{ site.contact.email }}">
+                <a id='email-link' href="mailto:{{ site.contact.email }}">
                   <span class="contact-item-icon">
                     <i aria-hidden="true" class="fas fa-mail-bulk"></i>
                   </span>
@@ -31,7 +31,7 @@
                 </a>
               </li>
               <li class="contact-item">
-                <a href="{{ site.socials.whatsapp }}">
+                <a id='whatsapp-link' href="{{ site.socials.whatsapp }}">
                   <span class="contact-item-icon">
                     <i class="fa-brands fa-whatsapp"></i>
                   </span>
@@ -39,7 +39,7 @@
                 </a>
               </li>
               <li class="contact-item">
-                <a href="{{ site.contact.waze }}">
+                <a id='waze-link' href="{{ site.contact.waze }}">
                   <span class="contact-item-icon">
                     <i class="fa-brands fa-waze"></i>
                   </span>
