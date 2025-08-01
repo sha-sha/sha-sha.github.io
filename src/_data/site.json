@@ -34,5 +34,28 @@
       "title": "הצהרת נגישות",
       "url": "/accessibility"
     }
+  },
+  "contact_form": {
+    "title": "השאר פרטים לחזרה:",
+    "from_name": "schlesinger-therapy",
+    "subject": "פנייה מאתר איילת שלזינגר ארביב",
+    "fields": {
+      "name": {
+        "label": "שם",
+        "placeholder": "הכנס את שמך"
+      },
+      "email": {
+        "label": "אימייל",
+        "placeholder": "הכנס את האימייל שלך"
+      },
+      "phone": {
+        "label": "טלפון",
+        "placeholder": "הכנס את מספר הטלפון שלך"
+      },
+      "message": {
+        "label": "הודעה",
+        "default": "אשמח לשמוע ממך"
+      }
+    }
   }
 }

@@ -5,29 +5,37 @@
         <h5 class="py-3">השאר פרטים לחזרה:</h5>
       </div>
     </div>
-    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+    <form id="contact-form" action="https://apix.web3forms.com/submit" method="POST" class="contact-form">
       <div class="row pb-5">
         <input type="hidden" name="access_key" value="6f6ff24e-e7d8-458d-8403-9a56ede8b09c"/>
+        <input type="hidden" name="subject" value="{{site.contact_form.subject}}">
+        <input type="hidden" name="from_name" value="{{site.contact_form.from_name}}">
         <input type="hidden" name="redirect" value="{{site.url}}/thanks.html">
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-4">
           <div class="mb-3">
-            <label for="name" class="form-label">שם</label>
+            <label for="name" class="form-label">{{site.contact_form.fields.name.label}}</label>
             <input type="text" class="form-control" id="name" name="name" required>
           </div>
         </div>
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-4">
           <div class="mb-3">
-            <label for="email" class="form-label">אימייל</label>
+            <label for="email" class="form-label">{{site.contact_form.fields.email.label}}</label>
             <input type="email" class="form-control" id="email" name="email" required>
           </div>
         </div>
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-4">
           <div class="mb-3">
-            <label for="phone" class="form-label">טלפון</label>
+            <label for="phone" class="form-label">{{site.contact_form.fields.phone.label}}</label>
             <input type="text" class="form-control" id="phone" name="phone">
           </div>
         </div>
-        <div class="col-12 col-md-3 d-flex align-items-end">
+        <div class="col-12 col-md-8">
+          <div class="mb-3">
+            <label for="message" class="form-label">{{site.contact_form.fields.message.label}}</label>
+            <textarea class="form-control" id="message" name="message" rows="1">{{site.contact_form.fields.message.default}}</textarea>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 d-flex align-items-end">
           <div class="mb-3" style="width: 100%;">
             <button style="width: 100%;" type="submit" class="btn btn-primary">שלח</button>
           </div>
