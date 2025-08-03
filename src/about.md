@@ -1,5 +1,5 @@
 ---
-title: "איילת שלזינגר ארביב – פסיכולוגית רגשית"
+title: "קצת על עצמי – איילת שלזינגר ארביב"
 layout: "about.njk"
 language: "hebrew"
 permalink: "/אודות/"
