@@ -1,6 +1,6 @@
 ---
 title: "איילת שלזינגר ארביב – פסיכולוגית רגשית"
 layout: "thanks.njk"
-language: "hebrew"
+language: "he"
 ---
 בקשה נשלחה!

@@ -1,6 +1,6 @@
 ---
 title: "הצהרת נגישות - איילת שלזינגר ארביב"
-language: "hebrew"
+language: "he"
 style: "legal"
 layout: "base.njk"
 permalink: "/הצהרת-נגישות/"

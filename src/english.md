@@ -1,6 +1,7 @@
 ---
 title: "English – איילת שלזינגר ארביב"
-language: "english"
+description: "Personal website of Dr. Ayelet Schlesinger-Arbib, an emotional  psychologist specializing in emotional therapy."
+language: "en"
 layout: "base.njk"
 permalink: "/english/"
 ---
